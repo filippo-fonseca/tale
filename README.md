@@ -32,6 +32,7 @@ If you are looking to hire me for services please send me an email with my conta
 <br>
 
 **Need Support? 👤**<br/>
-Contact me on either *Twitter* or via *Mail*. If you are requesting a takedown please make sure to be descriptive.<br>
+Contact me on either *Twitter* or via *Mail*.<br>
 Mail | [support@renai.me](mailto:support@renai.me)<br>
+Twitter | [Renaitare](https://twitter.com/Renaitare)
 Discord | *renai#1111*
