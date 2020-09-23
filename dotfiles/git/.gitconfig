@@ -1,0 +1,12 @@
+[user]
+	email = git@renai.me
+	name = Renaitare
+	signingkey = 2916132E5DBECBFA3D374F3FCDC4AFF251013239
+[tag]
+	forceSignAnnotated = true
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
+[pull]
+	ff = only
