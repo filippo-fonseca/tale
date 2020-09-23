@@ -8,5 +8,7 @@
 	gpgsign = true
 [gpg]
 	program = /usr/local/bin/gpg
+[core]
+	editor = nano
 [pull]
-	ff = only
+	rebase = true
