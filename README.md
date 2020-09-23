@@ -32,7 +32,7 @@ If you are looking to hire me for services please send me an email with my conta
 <br>
 
 **Need Support? 👤**<br/>
-Contact me on either *Twitter* or via *Mail*.<br>
+Contact me on either *Twitter*, *Discord*, or via *Mail*.<br>
 Mail | [support@renai.me](mailto:support@renai.me)<br>
-Twitter | [Renaitare](https://twitter.com/Renaitare)
+Twitter | [Renaitare](https://twitter.com/Renaitare)<br>
 Discord | *renai#1111*
