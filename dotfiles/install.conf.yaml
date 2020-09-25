@@ -23,6 +23,3 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing Submodules]
-
-- brewfile:
-    file: Brewfile
