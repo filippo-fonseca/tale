@@ -3,9 +3,9 @@ function iconsur() {
     echo "Updating Icons..."
     echo -n "Progress: "
     
-    sudo $HOME/.bin/iconsur set /Applications/The\ Unarchiver.app -l -c e1e2e1 &>/dev/null && echo -n "#"
-    sudo $HOME/.bin/iconsur set /Applications/Visual\ Studio\ Code.app -l -s 0.8 -c e1e2e1 &>/dev/null && echo -n "#"
-    sudo $HOME/.bin/iconsur set /Applications/Hopper\ Disassembler\ v4.app -l -s 0.7 -c e1e2e1 &>/dev/null && echo -n "#"
+    sudo $HOME/.bin/iconsur set /Applications/The\ Unarchiver.app -l -c fefefe &>/dev/null && echo -n "#"
+    sudo $HOME/.bin/iconsur set /Applications/Visual\ Studio\ Code.app -l -s 0.8 -c fefefe &>/dev/null && echo -n "#"
+    sudo $HOME/.bin/iconsur set /Applications/Hopper\ Disassembler\ v4.app -l -s 0.7 -c fefefe &>/dev/null && echo -n "#"
     sudo $HOME/.bin/iconsur set /Applications/Adobe\ Photoshop\ 2020/Adobe\ Photoshop\ 2020.app -l -s 1.1 -c 010101 &>/dev/null && echo -n "#"
     
     sudo $HOME/.bin/iconsur set /Applications/Spark.app -k 'Spark' &>/dev/null && echo -n "#"
@@ -21,6 +21,16 @@ function iconsur() {
     echo ""
     echo "Updating Icon Cache..."
     sudo $HOME/.bin/iconsur cache
+    sudo rm -rf /Library/Caches/com.apple.iconservices.store &>/dev/null
+    sudo touch /Applications/* &>/dev/null
+    sudo find /private/var/folders/ ( -name com.apple.dock.iconcache -or -name com.apple.iconservices ) -exec rm -rf {}; &>/dev/null
+    killall Dock &>/dev/null
+    killall Finder &>/dev/null
+}
+
+function wakedev() {
+    wakeonlan -f ~/.sashimi_id
+    ssh renai@sashimi
 }
 
 export -f iconsur &>/dev/null
