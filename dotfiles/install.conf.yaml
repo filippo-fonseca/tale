@@ -10,6 +10,7 @@
 - link:
     # Shell stuff
     ~/.aliases: shell/.aliases
+    ~/.functions: shell/.functions
     ~/.zshrc: shell/.zshrc
     ~/.zsh/.antigen.zsh: shell/.antigen.zsh
     ~/.zsh/.antigenrc: shell/.antigenrc
@@ -20,6 +21,10 @@
     # Git
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore: git/.gitignore
+    
+    # Bin
+    ~/.bin/iconsur: bin/iconsur
 
 - shell:
   - [git submodule update --init --recursive, Installing Submodules]
+  - [chmod +x ~/.bin/iconsur, Fixing execution permissions for 'iconsur']
