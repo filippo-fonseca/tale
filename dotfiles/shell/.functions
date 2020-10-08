@@ -29,8 +29,13 @@ function iconsur() {
 }
 
 function wakedev() {
-    wakeonlan -f ~/.sashimi_id
+    wakeonlan -f ~/.sashimi_id &>/dev/null
     ssh renai@sashimi
+}
+
+function sleepdev() {
+    ssh -t renai@sashimi 'sudo pm-suspend'
+    exit 0
 }
 
 export -f iconsur &>/dev/null
